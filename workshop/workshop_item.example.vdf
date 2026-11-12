@@ -1,0 +1,11 @@
+"workshopitem"
+{
+	"appid"		"4348910"
+	"publishedfileid"		"3838227977"
+	"contentfolder"		"C:\\path\\to\\upload\\content"
+	"previewfile"		"C:\\path\\to\\upload\\preview.png"
+	"visibility"		"0"
+	"title"		"出售快捷键 + 不可售标记 | Sell Hotkey & Not-for-Sale Mark"
+	"description"		"(Workshop 页面上的简介，支持 BBCode，换行写成 \n)"
+	"changenote"		"本次更新说明"
+}

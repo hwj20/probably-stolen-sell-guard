@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <ID>local.sell_guard</ID>
+  <Name>出售快捷键 + 不可售标记</Name>
+  <Author>论文写完前不玩游戏吗</Author>
+  <ModVersion>1.0.0</ModVersion>
+  <Description>在「设置 → 按键」新增「出售（确认交易）」快捷键（默认 G）：客户来买东西时，按下等同于点击谈判平板上的「出售」按钮。物品右键菜单新增「标记为不可售 / 取消不可售标记」：带标记的物品（以及装着它的容器）即使摆上台面，客户也不会买、不会被卖出。注意：标记以自定义 tag 存进存档，卸载本 mod 后不再生效，不影响原版。 / Adds a rebindable Sell hotkey (default G) and a right-click Mark Not for Sale option; marked items are never sold. The mark is stored as a tag in your save.</Description>
+  <GameVersions>
+    <Version>0.46D</Version>
+  </GameVersions>
+  <Prerequisites />
+  <Assemblies>
+    <Assembly>SellGuard.dll</Assembly>
+  </Assemblies>
+  <Capabilities />
+</Manifest>
