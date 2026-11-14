@@ -74,6 +74,16 @@ tools/WorkshopUploader/bin/Release/net8.0/WorkshopUploader.exe <你的 workshop_
 ```
 
 vdf 格式见 `workshop/workshop_item.example.vdf`。`publishedfileid` 为 `0` 时会新建物品，并把新 ID 写回 vdf；填了 ID 则更新该物品。
+
+`"tags"` 是可选键，填逗号分隔的创意工坊标签（例如 `"Quality of Life,UI,Utilities"`），上传时一并设置；不写这个键就不改动现有标签，写成空串 `""` 则清空标签。
+
+只想改标签时加 `--tags-only`：
+
+```bash
+tools/WorkshopUploader/bin/Release/net8.0/WorkshopUploader.exe <你的 workshop_item.vdf> --tags-only
+```
+
+这个模式只提交 `"tags"`，不上传文件，也不改标题、简介、预览图和可见性，不写更新说明，订阅者不会收到新版本；vdf 里需要已有 `publishedfileid`，`contentfolder` 和 `previewfile` 指向的文件可以不存在。
 也可以用官方的 steamcmd：`steamcmd +login <账号> +workshop_build_item <vdf> +quit`。
 
 ---
